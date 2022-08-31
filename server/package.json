@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server resources for Contact-card",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "rohirrimsride"
+  },
+  "author": "rohirrimsride",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

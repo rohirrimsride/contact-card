@@ -1,0 +1,28 @@
+{
+  "name": "contact-card",
+  "version": "1.0.0",
+  "description": "Root directory for Contact-card",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+    "start": "cd server && node server.js",
+    "server": "cd server nodemon server.js --ignore client",
+    "build": "cd client && npm run build",
+    "client": "cd client && npm start",
+    "install": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohirrimsride/contact-card.git"
+  },
+  "author": "rohirrimsride",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rohirrimsride/contact-card/issues"
+  },
+  "homepage": "https://github.com/rohirrimsride/contact-card#readme",
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
+}
