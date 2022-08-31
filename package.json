@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Root directory for Contact-card",
   "main": "index.js",
+  "engines": {
+    "node": "16.15.1"
+  },
   "scripts": {
+    "heroku-prebuild": "npm install --dev",
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "cd server && node server.js",
     "server": "cd server nodemon server.js --ignore client",
