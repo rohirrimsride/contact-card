@@ -31,7 +31,7 @@ export const postDb = async () => {
     const contactDb = await openDB('contact_db', 1);
     const tx = contactDb.transaction('contacts', 'readwrite');
     const store = tx.objectStore('contacts');
-    const request = store.add({ name: name, email: email, phone: phone });
+    const request = store.add({ name: name, email: email, phone: phone, profile: profile });
     const result = await request;
     console.log('🚀 - data saved to the database', result);
 }
