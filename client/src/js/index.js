@@ -1,6 +1,6 @@
 import "./form.js";
 import "./submit.js";
-import { initdb } from './database';
+import { getDb, initdb, postDb } from './database';
 
 import "../css/index.css";
 import { Tooltip, Toast, Popover } from "bootstrap";
@@ -13,6 +13,9 @@ import Covid from '../images/covid.png';
 
 window.addEventListener('load', function () {
     initdb();
+    getDb();
+    postDb('rohirrimsride', 'rohirrimsride@mail.com', 1234567890, 'Covid');
+    getDb();
     document.getElementById('logo').src = Logo;
     document.getElementById('bearThumbnail').src = Bear;
     document.getElementById('dogThumbnail').src = Dog;
