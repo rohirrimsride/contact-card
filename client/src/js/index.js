@@ -19,3 +19,8 @@ window.addEventListener('load', function () {
     document.getElementById('covidThumbnail').src = Covid;
 });
 
+import { openDB, deleteDB, wrap, unwrap } from 'idb';
+
+async function doDatabaseStuff() {
+    const db = await openDB();
+}
