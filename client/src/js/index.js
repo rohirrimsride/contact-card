@@ -21,13 +21,6 @@ window.addEventListener('load', function () {
     document.getElementById('covidThumbnail').src = Covid;
 });
 
-<<<<<<< HEAD
-import { openDB, deleteDB, wrap, unwrap } from 'idb';
-
-async function doDatabaseStuff() {
-    const db = await openDB();
-}
-=======
   // Form functionality
   const form = document.getElementById("formToggle");
   const newContactButton = document.getElementById("new-contact");
@@ -63,5 +56,3 @@ async function doDatabaseStuff() {
   // Reload the DOM
   fetchCards();
   });
-
->>>>>>> 15d8ac14e97bcfe368220e58e4233cdf974055a2
